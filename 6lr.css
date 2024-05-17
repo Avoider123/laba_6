@@ -1,0 +1,169 @@
+.animation{
+    border: 10px solid black;
+    display: inline-block;
+    max-width: 50%;
+    margin: 40px;
+    height: 300px;
+    position: relative;
+    left: 170px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+
+.animation:hover{
+    transform: scale(1.1);
+}
+
+.animation p{
+    position: relative;
+    top: -150px;
+    font-size: 30px;
+    text-align: center;
+    margin: -30px;
+    display: none;
+    color: white;
+}
+
+.animation:hover p{
+    display: block;
+    opacity: 0;
+    animation: animation_name 1s forwards;
+}
+
+@keyframes animation_name {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#first_animation:hover{
+    animation: 4s linear 0s normal none infinite running first_anima;
+}
+
+@keyframes first_anima{
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#second_animation:hover{
+    animation: 2s linear 0s normal none infinite running second_anima;
+}
+
+@keyframes second_anima {
+   0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+#third_animation:hover{
+    animation: 5s linear 0s normal none infinite running third_anima;
+}
+
+@keyframes third_anima{
+    0%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(10px);
+    }
+}
+
+#four_animation:hover{
+    animation: 7s linear 0s normal none infinite running four_anima;
+}
+
+@keyframes four_anima{
+    0%{
+        filter: grayscale(0);
+    }
+    25%{
+        filter: grayscale(1);
+    }
+    100%{
+        filter: grayscale(0);
+    }
+}
+
+#five_animation:hover{
+    animation: 10s linear 0s normal none infinite running five_anima;
+}
+
+@keyframes five_anima{
+    0%{
+        border-radius: 0px;
+        transform: scale(1);
+    }
+    25%{
+        border-radius: 75px;
+        transform: scale(1.3);
+    }
+    50%{
+        border-radius: 150px;
+        transform: scale(1.7);
+    }
+    75%{
+        border-radius: 75px;
+        transform: scale(1.3);
+    }
+    100%{
+        border-radius: 0px;
+        transform: scale(1);
+    }
+}
+#six_animation:hover{
+    animation: 5s linear 0s normal none infinite running six_anima;
+}
+@keyframes six_anima{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+#seven_animation:hover{
+    animation: 5s linear 0s normal none infinite running seven_anima;
+}
+
+
+@keyframes seven_anima{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5, 0.6);
+    }
+
+}
+#eight_animation:hover{
+    animation: 5s linear 0s normal none infinite running eight_anima;
+}
+@keyframes eight_anima{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.6, 1.5);
+    }
+}
+#nine_animation:hover{
+    animation: 8s linear 0s normal none infinite running nine_anima;
+}
+@keyframes nine_anima{
+    100%{
+       transform: skewX(30deg);
+    }
+}
+
